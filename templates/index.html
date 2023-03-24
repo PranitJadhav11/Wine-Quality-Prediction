@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Prediction</title>
+    
+</head>
+<body>
+    <form action="/predict" method="POST">
+        <center> <h2><b>Wine Quality Prediction</b></h2></center><hr>
+        <center><h4>Use machine learning to determine which physiochemical properties make a wine 'good'!</h4></center>
+        <label><b>Fixed Acidity : </b></label><input type="text" name="fixed_acidity" placeholder=" "><br><br>
+        <label><b>Volatile Acidity : </b></label><input type="text" name="volatile_acidity" placeholder=" "><br><br>
+        <label><b>Citric Acid : </b></label><input type="text" name="citric_acid" placeholder=" "><br><br>
+        <label><b>Residual Sugar : </b></label><input type="text" name="residual_sugar" placeholder=" "><br><br>
+        <label><b>Chlorides : </b></label><input type="text" name="chlorides" placeholder=" "><br><br>
+        <label><b>Free Sulfur Dioxide : </b></label><input type="text" name="free_sulfur_dioxide" placeholder=" "><br><br>
+        <label><b>Total Sulfur Dioxide : </b></label><input type="text" name="total_sulfur_dioxide" placeholder=" "><br><br>
+        <label><b>Density : </b></label><input type="text" name="density" placeholder=" "><br><br>
+        <label><b>PH : </b></label><input type="text" name="pH" placeholder=" "><br><br>
+        <label><b>Sulphates : </label><input type="text" name="sulphates" placeholder=" "><br><br>
+        <label><b>Alcohol : </b></label><input type="text" name="alcohol" placeholder=" "><br><br>
+        <b><hr></b>
+        <b><input type="submit" value="Predict"><br><br></b>
+        <center>
+        <h3>Predicted Wine Quality = {{qua}}</h3>
+        </center>
+    </form>
+</body>
+</html>
